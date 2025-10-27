@@ -605,6 +605,11 @@ function startGameWithLevel(level) {
 
 
 document.body.appendChild(gameTitle);
+// When showing the level select overlay:
+document.body.classList.add('level-select-active');
+
+// When starting the game (after level is chosen):
+document.body.classList.remove('level-select-active');
 
 }
 
